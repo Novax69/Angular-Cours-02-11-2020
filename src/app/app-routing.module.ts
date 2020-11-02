@@ -12,6 +12,10 @@ const routes: Routes = [
   {
     path:'contact',
     component: ContactComponent
+  },
+  {
+    path: 'users',
+    loadChildren: () => import('./users/users.module').then((m) => m.UsersModule)
   }
 ];
 
