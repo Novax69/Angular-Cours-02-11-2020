@@ -8,14 +8,14 @@ import { UserService } from 'src/app/user.service';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
-
+  users;
   constructor(private UsersService: UserService) { }
 
   ngOnInit(): void {
-    this.UsersService.getUsers()
-    .subscribe((users) => {
-      console.log(users);
-    })
+    this.users = this.UsersService.getUsers();
+
+
+    
   }
 
 }
