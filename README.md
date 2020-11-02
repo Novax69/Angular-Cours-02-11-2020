@@ -1,3 +1,10 @@
+# Installation :
+
+Une fois le git clone effectué, déplacez vous dans le dossier via bash (terminal) et effectué la commande **npm i** ou **npm install** pour récuperer les dépendances
+
+
+
+
 # Websitebase
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
