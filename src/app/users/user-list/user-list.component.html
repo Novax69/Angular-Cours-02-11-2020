@@ -5,7 +5,9 @@
             <!-- user loop -->
             <div class="column is-4" *ngFor="let user of users | async">
                 <div class="card">
-                    {{user.login}}
+                    <div class="card-content">
+                        {{user.login}}
+                    </div>
                 </div>
             </div>
         </div>
