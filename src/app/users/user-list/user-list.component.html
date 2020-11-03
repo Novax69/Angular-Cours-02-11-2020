@@ -1,4 +1,13 @@
-<a>les 10 premiers utilisateurs de github : </a>
-<div class="card" *ngFor="let user of users | async">
-    {{ user.login }}
-</div>
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            <!-- user loop -->
+            <div class="column is-4" *ngFor="let user of users | async">
+                <div class="card">
+                    {{user.login}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
